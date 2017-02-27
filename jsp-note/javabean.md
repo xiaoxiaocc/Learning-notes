@@ -51,6 +51,7 @@ Jsp动作元素(action elements),动作元素为请求处理阶段提供信息�
 <jsp:useBean> <jsp:setProperty> <jsp:getProperty>
 
 ## 给javabean对象赋值
+
 1. 跟表单关联
 ``` Jsp
 <%--根据表单自动匹配所有属性--%>

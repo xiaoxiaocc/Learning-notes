@@ -59,7 +59,7 @@ Cookie[] cookies = request.getCookies();
 ``` Java
 String username = URLEncoder.encode(request.getParameter("username"), "utf-8");
 
-Cookie usernameCookie = new Cookie("usernmae", username);
+Cookie usernameCookie = new Cookie("username", username);
 
 response.addCookie(usernameCookie);
 ```
