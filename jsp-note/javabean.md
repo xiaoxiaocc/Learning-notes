@@ -1,5 +1,14 @@
 
 <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
+
+* [Javabean是什么](#javabean是什么)
+* [Javabean的设计原则](#javabean的设计原则)
+* [Jsp动作元素](#jsp动作元素)
+* [Jsp动作元素第一类（与存取javabeans有关的）](#jsp动作元素第一类与存取javabeans有关的)
+* [给javabean对象赋值](#给javabean对象赋值)
+* [Javabean的四个作用域范围](#javabean的四个作用域范围)
+* [javavean对象的获取](#javavean对象的获取)
+
 <!-- tocstop -->
 
 ## Javabean是什么
