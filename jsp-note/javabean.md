@@ -52,26 +52,26 @@ Jsp动作元素(action elements),动作元素为请求处理阶段提供信息�
 
 ## 给javabean对象赋值
 
-1. 跟表单关联 <br>
-    ``` Jsp
-    <%--根据表单自动匹配所有属性--%>
-        <jsp:setProperty name="myUsers" property="*"/>
-    ```
-2. 跟表单部分关联 <br>
-    ``` Jsp
-     <jsp:setProperty name="myUsers" property="username"/>
-    ```
-3. 手动赋值给属性 <br>
-    ``` Jsp
-    <jsp:setProperty name="myUsers" property="username" value="lisi"/>
-        <jsp:setProperty name="myUsers" property="password" value="888888"/>
-    ```
-4. 跟request参数关联 <br>
-    ``` Jsp
-    <!--通过URL传参数给属性赋值 -->
-       <jsp:setProperty name="myUsers" property="username"/>
-       <jsp:setProperty name="myUsers" property="password" param="mypass"/>
-    ```
+- 跟表单关联
+``` Jsp
+<%--根据表单自动匹配所有属性--%>
+    <jsp:setProperty name="myUsers" property="*"/>
+```
+- 跟表单部分关联
+``` Jsp
+ <jsp:setProperty name="myUsers" property="username"/>
+```
+- 手动赋值给属性
+``` Jsp
+<jsp:setProperty name="myUsers" property="username" value="lisi"/>
+    <jsp:setProperty name="myUsers" property="password" value="888888"/>
+```
+- 跟request参数关联
+``` Jsp
+<!--通过URL传参数给属性赋值 -->
+   <jsp:setProperty name="myUsers" property="username"/>
+   <jsp:setProperty name="myUsers" property="password" param="mypass"/>
+```
 
 ## Javabean的四个作用域范围
 使用useBean的scope属性来指定
@@ -82,12 +82,12 @@ Jsp动作元素(action elements),动作元素为请求处理阶段提供信息�
 
 
 ## javavean对象的获取
-1. 使用useBean
+- 使用useBean
 ``` Jsp
 <jsp:useBean id="myUsers" class="com.po.Users" scope="page"/>
 其中id就是获取到的对象的引用。
 ```
-2. 使用内置对象
+- 使用内置对象
 ``` Jsp
 <% ((Users)application.getAttribute("myUsers")).getUsername();%><br>
 <% ((Users)application.getAttribute("myUsers")).getPassword();%>
