@@ -74,6 +74,7 @@ out对象打印的内容总在PrintWriter类的对象所打印的内容后面显
 - **example:**
    1. 重定向：你先去了A句，A句的人说:"这个事不归我们管，去B局"，然后，你就从A局退了出来，自己乘车去了B局。
    2. 转发： 你去了A局，A局看了以后，知道这个事情其实应该是B局来管，但是他没有把你退回来，而是让你坐了一会儿，自己到后面办公室联系了B的人，让他们办好后，送了过来。
+- 超链接就是一种请求重定向
 
 ### session
  - session表示客户端与服务器的一次会话。
@@ -132,7 +133,7 @@ config对象是在一个Servlet初始化时，JSP引擎向它传递信息用的�
 
 ### exception对象
 如果jsp页面要应用此对象，就必须把isErroPage设为true，否则无法编译。它实际上是java.lang.Throwable的对象。
-<@ page errorPage="exception.jsp">是指当前也买你发生异常时，交给哪个页面去处理。处理页面的<@ page isErrorPage="true">
+<@ page errorPage="exception.jsp">是指当前页面发生异常时，交给哪个页面去处理。处理页面的<@ page isErrorPage="true">
 
 
 ## form的提交方式
