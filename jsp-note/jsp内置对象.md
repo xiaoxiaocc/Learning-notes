@@ -4,6 +4,7 @@
 * [JSP内置对象](#jsp内置对象)
   * [out对象](#out对象)
   * [request对象](#request对象)
+    * [request对象getParameter与getAttribute方法的区别](#request对象getparameter与getattribute方法的区别)
   * [response对象](#response对象)
   * [请求转发和请求重定向](#请求转发和请求重定向)
   * [session](#session)
@@ -53,6 +54,11 @@ JSP内置对象是Web容器创建的一组对象，不是用new关键字就可�
   URIEncoding="utf-8" />
 
 ```
+#### request对象getParameter与getAttribute方法的区别
+- getParameter()方法用来获得客户端通过 Get/Post方法提交的参数(使用URL参数或者form表单提交)，参数的类型是 String。
+- getAttribute方法可以获得在服务器端具有 转发关系(forward)页面用setAttribute方法设置的参数，参数的类型为Object。
+> http://www.jianshu.com/p/2ae048804852
+
 
 ### response对象
 response对象包含了响应客户请求的有光信息，但在JSP中很少用到它。它是HttpServletResponse类的实例。response对象具有页面作用域，即访问一个页面时，该页面的response对象只能对这次访问有效，其他页面的response对象对当前页面无效。
