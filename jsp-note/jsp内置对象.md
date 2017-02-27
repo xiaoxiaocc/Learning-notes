@@ -108,13 +108,13 @@ out对象打印的内容总在PrintWriter类的对象所打印的内容后面显
 ### session的超时时间设置
 1. session.setMaxInactiveInterval（时间）; 单位：秒
 2. 在web.xml配置：
-``` xml
-  <session-config>
-    <session-timeout>
-      10
-    </session-timeout>
-  </session-config>
-```
+    ``` xml
+      <session-config>
+        <session-timeout>
+          10
+        </session-timeout>
+      </session-config>
+    ```
 3. Tomcat默认的session时间为30秒。
 
 ### application对象
