@@ -17,7 +17,8 @@
 ```
  ssh-keygen -t rsa
 
- 会提示在在某个目录生成的id_rsa和id_rsa_pub文件，其中后者为公钥。将公钥内容复制粘贴到github Profile Settings->SSH key-> add ssh keys。
+ 会提示在在某个目录生成的id_rsa和id_rsa_pub文件，其中后者为公钥。
+ 将公钥内容复制粘贴到github Profile Settings->SSH key-> add ssh keys。
 ```
 - 测试一下：
 ```
