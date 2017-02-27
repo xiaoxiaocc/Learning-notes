@@ -1,3 +1,7 @@
+
+<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
+<!-- tocstop -->
+
 ## Javabean是什么
 Javabean就是符合某种特定的规范的Java类。使用Javabean的好处是解决代码重复编写，减少代码冗余，功能区分明确，提高了代码的维护性。
 
@@ -13,6 +17,9 @@ public class Users {
     private String username;
     private String password;
     public Users() {
+<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
+<!-- tocstop -->
+
     }
     public String getUsername() {
         return username;
