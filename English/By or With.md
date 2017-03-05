@@ -16,8 +16,9 @@
 
 - 当后面是名词的时候:`Noun = Person,place,thing.`
 
-    `By = communication、trasportation、other exceptions/examples` <br>
+    `By = communication、trasportation、other exceptions/examples`  
     `With = body parts、tools、instrument`
+
     ```
     I will contact you by email.
     I will message you by text.
