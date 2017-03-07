@@ -98,3 +98,7 @@ Jsp动作元素(action elements),动作元素为请求处理阶段提供信息�
 密码：<%=((Users)request.getAttribute("myUsers")).getPassword() %>
 
 ```
+
+- useBean中type和class的区别
+  - `class`: instantiates the specified bean class (i.e. creates an object of the bean class) but it must have no-arg or no constructor and must not be abstract.
+  - `type`: provides the bean a data type if the bean already exists in the scope. It is mainly used with class or beanName attribute. If you use it without class or beanName, no bean is instantiated.
